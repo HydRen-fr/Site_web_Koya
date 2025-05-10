@@ -1,88 +1,103 @@
 import streamlit as st
 
-# Configuration de la page
+# Page configuration
 st.set_page_config(
-    page_title="Kangaroo Planet",
-    page_icon="🦘",
+    page_title="Koya",
+    page_icon="📈",
     layout="wide"
 )
 
-logo = "logo.jpg"
-screenshot_1 = "kang.png"
-screenshot_2 = "lune.png"
+# Image file paths
+logo = "koya.png"  # Replace with your actual logo file
 
-# Titre principal et introduction
-col1, col2 = st.columns([2, 3])
+# Header with logo + title
+col1, col2 = st.columns([1, 4])
 with col1:
     st.image(logo, use_container_width=True)
 with col2:
     st.markdown("""
-    <div style='font-size: 39px;'>  <!-- Adjust font-size as needed -->
+    <div style='font-size: 38px; color: white;'>
         <br><br>
-        <h1>🌍 Kangaroo Planet</h1>
-        <h3>Piou piou piou</h3>
-        <p><strong>Kangaroo Planet</strong> est un jeu d'action-survie-shooter immersif où vous incarnez un kangourou défendant sa planète d'une invasion humaine. 
-        Préparez-vous à combattre des ennemis redoutables et méchants !</p>
+        <h1 style="color:white;">Koya</h1>
+        <h3 style="color:#cccccc;">You trade, we handle the rest.</h3>
+        <p>A structure designed to reveal and grow the <strong>best traders on Involio</strong>.</p>
     </div>
     """, unsafe_allow_html=True)
 
-# Section : Un jeu captivant
-st.header("🎮 **Un jeu captivant**")
+# Problem section
+st.header("🕵️ The Problem")
 st.markdown("""
-- **Incarnez un kangourou et SHOOTEZ-LES TOUS**
-- **Un jeu qui détend avant tout**
-- **Profitez d'une bonne musique en fond tout en exterminant les bad guys**
+- No personal branding  
+- No strategy  
+- No support  
+➡️ **Most good traders remain invisible.**
+
+They stagnate or leave the platform.
+
+**Being good is no longer enough.**
+
+> Creating consistent, professional content requires expertise.  
+> That’s not your job. That’s ours.
 """)
 
-# Section : Captures d'écran
-st.header("📸 **Aperçu du jeu**")
-col1, col2 = st.columns(2)
-with col1:
-    st.image(screenshot_1, use_container_width=True, caption="Incarnez le meilleur des animaux : un kangourou")
-with col2:
-    st.image(screenshot_2, use_container_width=True, caption="Un univers magnifique et rigolo")
+# Vision section
+st.header("🌟 Our Vision")
+st.markdown("""
+To ensure top traders are no longer overlooked — by giving them structure, visibility, and long-term credibility.
 
-# Section : Développement
-st.header("🚀 **Coulisses du développement**")
-st.write("""
-L'équipe derrière **Kangaroo Planet** a travaillé d'arrache-pied pour offrir une expérience de jeu fluide et captivante. Voici quelques faits marquants :
-- **Scripts principaux :** Gestion des ennemis, armes, et spawn dynamique, optimisés pour une performance maximale.
-- **Intelligence artificielle :** Un système de comportement complexe permettant aux ennemis de s'adapter aux actions du joueur.
-- **Graphismes :** Univers visuel unique, inspiré des paysages extraterrestres et de l'Australie sauvage.
+- Identify real talent  
+- Centralize and amplify their value  
+- Let them focus purely on trading  
 """)
 
-# Section : Témoignages
-st.header("💬 **Ce que disent les joueurs**")
-testimonials = [
-    "⭐️⭐️⭐️⭐️⭐️ 'Une expérience inoubliable, Kangaroo Planet est vraiment hors du commun !' - Alex",
-    "⭐️⭐️⭐️⭐️ 'Des combats épiques et une exploration incroyable !' - Mia",
-    "⭐️⭐️⭐️⭐️⭐️ 'Le jeu le plus immersif que j'ai joué cette année !' - Lucas",
-    "⭐️⭐️⭐️⭐️⭐️ 'Un jeu créé par des goats pour les goats...' - Le grand-frère de Lucas",
-    "⭐️⭐️⭐️⭐️⭐️ 'Dinguerie' - Le papa de Lucas",
-    "⭐️⭐️⭐️⭐️⭐️ 'J'ai arrêté mon addiction à la douche grâce à Kangaroo Planet' - Kévin"
-]
-for testimonial in testimonials:
-    st.markdown(f"> {testimonial}")
+# Why now?
+st.header("⏱ Why now?")
+st.markdown("""
+- Involio is growing — but **disorganized**
+- No real brand, no team, no structure
+- Everyone plays solo
 
-st.write("---")
-# Exemple d'utilisation de st.download_button
-st.header("📄 **Téléchargez notre rapport de soutenance**")
-st.write("""
-    Vous pouvez télécharger notre rapport de soutenance en cliquant sur le bouton ci-dessous.
-    Ce rapport présente en détail le processus de développement, les choix techniques et les fonctionnalités principales du jeu **Kangaroo Planet**.
+We’re stepping in while the space is still wide open.
 """)
-# Ajouter un bouton de téléchargement pour le rapport
-with open("rapport_soutenance.pdf", "rb") as file:
-    st.download_button(
-        label="Télécharger le rapport de soutenance", 
-        data=file, 
-        file_name="rapport_soutenance.pdf", 
-        mime="application/pdf"
-    )
-    
+
+# What we offer
+st.header("🎯 What We Offer")
+st.markdown("""
+- 🧱 A stable framework  
+- 📊 A structured account ready to perform  
+- 🧑‍💻 Two portfolio types under your name  
+- 👥 Shared visibility without losing your identity  
+- 💰 Increased revenue potential  
+
+**You publish directly via Koya’s account.**
+
+- **Standard**: Free (monetization coming soon)  
+- **VIP**: Subscription-based access to your signals  
+
+> Involio will pay for all copied trades — even in non-VIP portfolios.
+""")
+
+# What you gain
+st.header("📈 What You Gain")
+st.markdown("""
+- 🧠 Less mental load  
+- 🧭 A serious image aligned with your strategy  
+- 🔁 Visibility that brings clients and income  
+
+> Your work is seen, understood, and promoted.  
+> We build a strong brand with you — not around you.
+
+**Your performance becomes true financial leverage.**
+""")
+
+# Team section
+st.header("👥 Meet the Team")
+st.markdown("""
+- **Helios Bringuet** – Strategy & Project Management  
+- **Thomas Chen** – Marketing & Project Management  
+- **Zoé Charrier** – Branding & Content Management
+""")
+
+# Footer
 st.write("---")
-# Section : Contact et liens
-st.write("Nous n'avons pas de réseaux car nous sommes mystérieux mais nous sommes des élèves de la promo 2029 de l'EPITA !")
-    
-st.write("---")
-st.markdown("© 2025 Kangaroo Planet Team. Tous droits réservés.")
+st.markdown("© 2025 Koya. All rights reserved.")
